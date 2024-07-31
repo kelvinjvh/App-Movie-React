@@ -1,0 +1,73 @@
+.poput-modal{
+  position: fixed;
+  width: 100%;
+  background-color: rgba(7,10,13);
+  color: #fff;
+  top: 0;
+  transition: .5s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow-y: auto;
+}
+.portada{
+  width: 250px;
+}
+.portada-img{
+  object-fit: cover;
+  height: 350px;
+  width: 100%;
+  border-radius: 5px;
+}
+.content-description{
+  width: 50%;
+  padding-left: 1em;
+  font-size: .9em;
+}
+.content-title{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.btn-close{
+  background-color: rgb(245, 55, 55,.5);
+  margin-right: 1em;
+  border-radius: 5px;
+  padding: .5em 1.5em;
+}
+.btn-close:hover{
+  background-color: rgb(240, 25, 25);
+}
+.btn-viewmore{
+  background-color: rgb(73, 184, 73);
+}
+.btn-viewmore:hover{
+  background-color: rgb(22, 153, 22);
+}
+p{
+  margin-bottom: .5em;
+}
+.buttons{
+  display: flex;
+}
+.showpoput{
+  transform: translateX(0);
+}
+.hidden{
+  transform: translateX(-100%);
+}
+@media  (max-width:650px) {
+  .content-description{
+    width: 80%;
+  }
+  .portada{
+    margin-top: 10em;
+  }
+  
+}
+@media (max-width:550px){
+  .portada{
+    margin-top: 7em;
+  }
+}
